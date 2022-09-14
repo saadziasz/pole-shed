@@ -1,26 +1,59 @@
 html {
-  background-color: #e4e9fd;
-  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  background-color: white;
   min-height: 1000px;
   font-family: "helvetica neue";
 }
 
-h1 {
+h2 {
   color: #fff;
   padding: 10px;
 }
 
+.address {
+  width: 100%;
+  text-align: start;
+}
+.jobNumber {
+  text-align: start;
+}
+.inline {
+  display: inline-block;
+  width: 450px;
+}
 .box {
-  max-width: 400px;
-  margin: 50px auto;
+  height: 100%;
+  max-width: 500px;
+  margin: 50px 0%;
   background: white;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
-
+.boxR {
+  height: 100%;
+  max-width: 500px;
+  margin: 50px 0% 0% 5%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.boxRR {
+  height: 100%;
+  max-width: 500px;
+  margin: 50px 0% 0% 5%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.boxRRR {
+  height: 100%;
+  max-width: 500px;
+  margin: 50px 0% 0% 5%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
 #heading {
-  background-color: #a683e3;
-  text-align: center;
+  background-color: #5a52eb;
 }
 
 .item {
@@ -29,14 +62,21 @@ h1 {
   align-items: center;
   border-bottom: 1px solid #f1f1f1;
 }
+.itemR {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
 
 .item:last-child {
   border-bottom: 0;
+  align-self: right;
 }
 
 input:checked + p {
   text-decoration: line-through;
-  text-decoration-color: #a683e3;
+  text-decoration-color: #5a52eb;
 }
 
 input[type="checkbox"] {
@@ -44,7 +84,7 @@ input[type="checkbox"] {
 }
 
 p {
-  margin: 0;
+  margin: 0 12px 0 0;
   padding: 20px;
   font-size: 20px;
   font-weight: 200;
@@ -58,30 +98,33 @@ form.item {
 
 button {
   min-height: 50px;
-  width: 50px;
-  border-radius: 50%;
+  width: auto;
+
   border-color: transparent;
-  background-color: #a683e3;
+  background-color: #5a52eb;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
   border-width: 0;
 }
+button:hover {
+  background-color: #1b10e8;
+}
 
 input[type="text"] {
-  text-align: center;
-  height: 60px;
+  text-align: left;
+
   top: 10px;
   border: none;
-  background: transparent;
+  background: white;
   font-size: 20px;
   font-weight: 200;
-  width: 313px;
+  width: auto;
 }
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #a683e3;
+  box-shadow: inset 0 -3px 0 0 #5a52eb;
 }
 
 ::placeholder {
@@ -93,4 +136,7 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+}
+td {
+  line-height: 40px;
 }
