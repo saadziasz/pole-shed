@@ -13,6 +13,8 @@
   }
 </script> -->
 
+
+
 <div class="inline">
   <form  action="/" method="post"  >
     
@@ -25,6 +27,17 @@
   <h2>Date:  <input type="text" name="date" class= "jobNumber"value ="<%= date %>" /></h2>
   <h2>Council:  <input type="text" name="council" class= "jobNumber" value ="<%= PoleDesignExternal.council %>" /></h2>
  </div>
+
+ <!-- <div>
+  <form action="/uploadProfilePicture" 
+  enctype="multipart/form-data" method="POST">
+  
+    <span>Upload Profile Picture:</span>  
+    <input type="file" name="mypic" required/> <br>
+    <input type="submit" value="submit"> 
+</form>
+ </div> -->
+
  <div style="border-style: solid; border-color: blue;">
   <p>Page No.
     <input type="text" name="pages" value="<%= PoleDesignExternal.pages %>" style="width:110px; background-color: gainsboro;" />
@@ -247,6 +260,16 @@
         <option value="Free"<%= shedType[2] %> >Free Standing</option>
        </select>
     </p>
+
+    <p>
+      <label for="IL"> Important Level:</label>
+      <select name="IL" id="IL">
+        <option value="IL1" <%= IL[0] %> >1</option>
+        <option value="IL2" <%= IL[1] %> >2</option>
+            
+       </select>
+    </p>
+
   </div>
     <div class="item">
       <p>No of Bays</p>
@@ -394,6 +417,10 @@
           <option value="36045LVL13" <%= PSize[29] %>  >360x45 LVL13</option> 
           <option value="40045LVL13" <%= PSize[30] %>  >400x45 LVL13</option> 
           <option value="45045LVL13" <%= PSize[31] %>  >450x45 LVL13</option> 
+          <option value="SG815050wet" <%= PSize[32] %>  >150x50 SG8 wet</option> 
+          <option value="SG820050wet" <%= PSize[33] %>  >200x50 SG8 wet</option> 
+          <option value="SG825050wet" <%= PSize[34] %>  >250x50 SG8 wet</option> 
+          <option value="SG830050wet" <%= PSize[35] %>  >300x50 SG8 wet</option> 
         </select>
          
     </div>
@@ -475,10 +502,10 @@
           <option value="SG829045Dry" <%= RSize[15] %> >2/290x45 SG8 Dry</option>
           <option value="40063LVL13" <%= RSize[16] %> >2/400x63 LVL13</option>
           <option value="40090LVL11" <%= RSize[17] %> >2/400x90 LVL11</option>
-          <option value="61045LVL11" <%= RSize[18] %> >1/610x90 LVL11</option>
+          <option value="61090LVL11" <%= RSize[18] %> >1/610x90 LVL11</option>
           <option value="24045LVL11" <%= RSize[19] %> >2/240x45 LVL11</option>
           <option value="24045LVL8" <%= RSize[20] %> >2/240x45 LVL8</option>
-          <option value="30045LVL8" <%= RSize[21] %> >2/300x45 LVL8</option>
+          <option value="29045LVL8" <%= RSize[21] %> >2/290x45 LVL8</option>
           <option value="61031.5LVL13" <%= RSize[22] %> >1/610x63 LVL13</option>
           <option value="30045LVL11" <%= RSize[23] %> >2/300x45 LVL11</option>
           <option value="36045LVL11" <%= RSize[24] %> >2/360x45 LVL11</option>
@@ -490,7 +517,13 @@
           <option value="SG629045wet" <%= RSize[30] %> >2/290x45 SG6 wet</option>
           <option value="SG824045wet" <%= RSize[31] %> >2/240x45 SG8 wet</option>
           <option value="SG829045wet" <%= RSize[32] %> >2/290x45 SG8 wet</option>
-          <option value="40022.5LVL13" <%= RSize[33] %> >1/400x45 LVL13</option>                 
+          <option value="40022.5LVL13" <%= RSize[33] %> >1/400x45 LVL13</option>    
+          <option value="45063LVL13" <%= RSize[34] %> >2/450x63 LVL13 </option>
+          <option value="61045LVL11" <%= RSize[35] %> >2/610x45 LVL11</option>
+          <option value="SG815050wet" <%= RSize[36] %>  >150x50 SG8 wet</option> 
+          <option value="SG820050wet" <%= RSize[37] %>  >200x50 SG8 wet</option> 
+          <option value="SG825050wet" <%= RSize[38] %>  >250x50 SG8 wet</option> 
+          <option value="SG830050wet" <%= RSize[39] %>  >300x50 SG8 wet</option> 
 
          </select>
          
@@ -541,8 +574,14 @@
           <option value="61090LVL11" <%= PrSize[18] %> >2/610x90 LVL11</option>
           <option value="24045LVL11" <%= PrSize[19] %> >2/240x45 LVL11</option>
           <option value="24045LVL8" <%= PrSize[20] %> >2/240x45 LVL8</option>
-          <option value="30045LVL8" <%= PrSize[21] %> >2/300x45 LVL8</option>
+          <option value="29045LVL8" <%= PrSize[21] %> >2/290x45 LVL8</option>
           <option value="30045LVL11" <%= PrSize[22] %> >2/300x45 LVL11</option>
+          <option value="SG815050wet" <%= PrSize[23] %>  >150x50 SG8 wet</option> 
+          <option value="SG820050wet" <%= PrSize[24] %>  >200x50 SG8 wet</option> 
+          <option value="SG825050wet" <%= PrSize[25] %>  >250x50 SG8 wet</option> 
+          <option value="SG830050wet" <%= PrSize[26] %>  >300x50 SG8 wet</option> 
+          
+
         
           
                     
@@ -770,7 +809,7 @@
           <option value="61090LVL11" <%= RESize[19] %> >610x90 LVL11</option>   
           <option value="24045LVL11" <%= RESize[20] %> >240x45 LVL11</option>
           <option value="24045LVL8" <%= RESize[21] %> >240x45 LVL8</option>
-          <option value="30045LVL8" <%= RESize[22] %> >300x45 LVL8</option>
+          <option value="29045LVL8" <%= RESize[22] %> >290x45 LVL8</option>
           <option value="30045LVL11" <%= RESize[23] %> >300x45 LVL11</option>
           <option value="36045LVL11" <%= RESize[24] %> >360x45 LVL11</option>
           <option value="40045LVL11" <%= RESize[25] %> >400x45 LVL11</option>
@@ -782,6 +821,11 @@
           <option value="SG824045wet" <%= RESize[31] %> >240x45 SG8 wet</option>
           <option value="SG829045wet" <%= RESize[32] %> >290x45 SG8 wet</option>
           <option value="40022.5LVL13" <%= RESize[33] %> >1/400x45 LVL13</option>  
+          <option value="45063LVL13" <%= RESize[34] %> >2/450x63 LVL13 </option>
+          <option value="SG815050wet" <%= RESize[35] %>  >150x50 SG8 wet</option> 
+          <option value="SG820050wet" <%= RESize[36] %>  >200x50 SG8 wet</option> 
+          <option value="SG825050wet" <%= RESize[37] %>  >250x50 SG8 wet</option> 
+          <option value="SG830050wet" <%= RESize[38] %>  >300x50 SG8 wet</option> 
          </select>
          
     </div>
@@ -848,6 +892,10 @@
           <option value="SG615050wet"  <%= IFb[6] %> >2/150x50 SG6 wet</option>
           <option value="SG620050wet"  <%= IFb[7] %> >2/200x50 SG6 wet</option>
           <option value="SG624050wet"  <%= IFb[8] %> >2/240x50 SG6 wet</option>
+          <option value="SG815050wet" <%= IFb[9] %>  >2/150x50 SG8 wet</option> 
+          <option value="SG820050wet" <%= IFb[10] %>  >2/200x50 SG8 wet</option> 
+          <option value="SG825050wet" <%= IFb[11] %>  >2/250x50 SG8 wet</option> 
+          <option value="SG830050wet" <%= IFb[12] %>  >2/300x50 SG8 wet</option> 
                              
          </select>
        </div>
@@ -877,7 +925,7 @@
 
     </div>
 
-  <div style="display: <%= GirtsFrontBack.display %>">
+  <div > <!-- style="display: <%= GirtsFrontBack.display %>  -->
     <h3 > Girts Front and Back</h3>
    
     <div class="item;" >
@@ -908,7 +956,11 @@
           <option value="30045LVL13"  <%= GFb[21] %> >300x45 LVL13</option>
           <option value="20045LVL8"  <%= GFb[22] %> >200x45 LVL8</option>
           <option value="24045LVL8"  <%= GFb[23] %> >240x45 LVL8</option>
-          <option value="30045LVL8"  <%= GFb[24] %> >300x45 LVL8</option>
+          <option value="29045LVL8"  <%= GFb[24] %> >290x45 LVL8</option>
+          <option value="SG815050wet" <%= GFb[25] %>  >150x50 SG8 wet</option> 
+          <option value="SG820050wet" <%= GFb[26] %>  >200x50 SG8 wet</option> 
+          <option value="SG825050wet" <%= GFb[27] %>  >250x50 SG8 wet</option> 
+          <option value="SG830050wet" <%= GFb[28] %>  >300x50 SG8 wet</option> 
                             
          </select>
        
@@ -973,8 +1025,11 @@
            <option value="SG619045wet"  <%= ISi[12] %> >2/190x45 SG6 wet</option>
            <option value="SG614045wet"  <%= ISi[13] %> >2/140x45 SG6 wet</option>
            <option value="SG614045Dry"  <%= ISi[14] %> >2/140x45 SG6 Dry</option>
-           
-                              
+           <option value="SG815050wet" <%= ISi[15] %>  >2/150x50 SG8 wet</option> 
+          <option value="SG820050wet" <%= ISi[16] %>  >2/200x50 SG8 wet</option> 
+          <option value="SG825050wet" <%= ISi[17] %>  >2/250x50 SG8 wet</option> 
+          <option value="SG830050wet" <%= ISi[18] %>  >2/300x50 SG8 wet</option> 
+                                        
           </select>
           
      </div>
@@ -1002,7 +1057,7 @@
   
       </div>
   
-    <div style="display: <%= GirtsSides.display %>">
+    <div > <!--style="display: <%= GirtsSides.display %>"-->
       <h3 > Girts Sides</h3>
      
       <div class="item;" >
@@ -1033,7 +1088,11 @@
           <option value="30045LVL13"  <%= GSi[21] %> >300x45 LVL13</option>
           <option value="20045LVL8"  <%= GSi[22] %> >200x45 LVL8</option>
           <option value="24045LVL8"  <%= GSi[23] %> >240x45 LVL8</option>
-          <option value="30045LVL8"  <%= GSi[24] %> >300x45 LVL8</option>
+          <option value="29045LVL8"  <%= GSi[24] %> >290x45 LVL8</option>
+          <option value="SG815050wet" <%= GSi[25] %>  >150x50 SG8 wet</option> 
+          <option value="SG820050wet" <%= GSi[26] %>  >200x50 SG8 wet</option> 
+          <option value="SG825050wet" <%= GSi[27] %>  >250x50 SG8 wet</option> 
+          <option value="SG830050wet" <%= GSi[28] %>  >300x50 SG8 wet</option> 
                        
            </select>
          
@@ -1092,6 +1151,7 @@
             <option value="200UNI"  <%= MPi[13] %> >200 UNI H5</option>
             <option value="225UNI"  <%= MPi[14] %> >225 UNI H5</option>
             <option value="250UNI"  <%= MPi[15] %> >250 UNI H5</option>
+            <option value="350SED"  <%= MPi[16] %> >350 SED H5</option>
                               
            </select>
            <input
@@ -1505,18 +1565,18 @@ style="width: 40px;"
 </div>
 
 <div>
-<img  src="http://localhost:3000/pics/EqZoneNorth.png" alt="Earthquake Zone North" width="900" height="900"> </img>
-<img  src="http://localhost:3000/pics/EqZoneSouth.png" alt="Earthquake Zone North" width="900" height="900"> </img>
+<img  src="/pics/EqZoneNorth.png" alt="Earthquake Zone North" width="900" height="900"> </img>
+<img  src="/pics/EqZoneSouth.png" alt="Earthquake Zone North" width="900" height="900"> </img>
 </div>
 <div>
-  <img  src="http://localhost:3000/pics/Durability North.png" alt="Earthquake Zone North" width="900" height="900"> </img>
-  <img  src="http://localhost:3000/pics/Durability South.png" alt="Earthquake Zone North" width="900" height="900"> </img>
+  <img  src="/pics/Durability North.png" alt="Earthquake Zone North" width="900" height="900"> </img>
+  <img  src="/pics/Durability South.png" alt="Earthquake Zone North" width="900" height="900"> </img>
 </div>
 <div>
-  <img  src="http://localhost:3000/pics/SnowZones.png" alt="Earthquake Zone North" width="900" height="900"> </img>
-  <img  src="http://localhost:3000/pics/Concrete Grade.png" alt="Concrete Grade" width="900" height="900"> </img>
+  <img  src="/pics/SnowZones.png" alt="Earthquake Zone North" width="900" height="900"> </img>
+  <img  src="/pics/Concrete Grade.png" alt="Concrete Grade" width="900" height="900"> </img>
 </div>
 <div>
-   <img  src="http://localhost:3000/pics/Councils map1.png" alt="Earthquake Zone North" width="900" height="900"> </img>
+   <img  src="/pics/Councils map1.png" alt="Earthquake Zone North" width="900" height="900"> </img>
 </div>
 <%- include("footer") -%>

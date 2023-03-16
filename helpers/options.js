@@ -5,7 +5,7 @@ module.exports = {
   header: {
     height: "10mm",
     contents:
-      '<div style="text-align: center; te"> <u>Pole Shed App Ver 01 2022 by RnH Consulting Engineers </u> </div>',
+      '<div style="text-align: center; te"> <u>Pole Shed App Ver 01 2022</u> </div>',
   },
   footer: {
     height: "10mm",

@@ -110,6 +110,14 @@ exports.PSize = function (PSize) {
     return Array(30).fill("").concat(["selected"]);
   } else if (PSize == "45045LVL13") {
     return Array(31).fill("").concat(["selected"]);
+  } else if (PSize == "SG815050wet") {
+    return Array(32).fill("").concat(["selected"]);
+  } else if (PSize == "SG820050wet") {
+    return Array(33).fill("").concat(["selected"]);
+  } else if (PSize == "SG825050wet") {
+    return Array(34).fill("").concat(["selected"]);
+  } else if (PSize == "SG830050wet") {
+    return Array(35).fill("").concat(["selected"]);
   }
 };
 exports.RSize = function (RSize) {
@@ -155,7 +163,7 @@ exports.RSize = function (RSize) {
     return Array(19).fill("").concat(["selected"]);
   } else if (RSize == "24045LVL8") {
     return Array(20).fill("").concat(["selected"]);
-  } else if (RSize == "30045LVL8") {
+  } else if (RSize == "29045LVL8") {
     return Array(21).fill("").concat(["selected"]);
   } else if (RSize == "61031.5LVL13") {
     return Array(22).fill("").concat(["selected"]);
@@ -181,9 +189,22 @@ exports.RSize = function (RSize) {
     return Array(32).fill("").concat(["selected"]);
   } else if (RSize == "40022.5LVL13") {
     return Array(33).fill("").concat(["selected"]);
+  } else if (RSize == "45063LVL13") {
+    return Array(34).fill("").concat(["selected"]);
+  } else if (RSize == "61045LVL11") {
+    return Array(35).fill("").concat(["selected"]);
+  } else if (RSize == "SG815050wet") {
+    return Array(36).fill("").concat(["selected"]);
+  } else if (RSize == "SG820050wet") {
+    return Array(37).fill("").concat(["selected"]);
+  } else if (RSize == "SG825050wet") {
+    return Array(38).fill("").concat(["selected"]);
+  } else if (RSize == "SG830050wet") {
+    return Array(39).fill("").concat(["selected"]);
   }
 
  };
+ 
 exports.RESize = function (RESize) {
   if (RESize == "SG815050Dry") {
     return ["selected"];
@@ -229,7 +250,7 @@ exports.RESize = function (RESize) {
     return Array(20).fill("").concat(["selected"]);
   } else if (RESize == "24045LVL8") {
     return Array(21).fill("").concat(["selected"]);
-  } else if (RESize == "30045LVL8") {
+  } else if (RESize == "29045LVL8") {
     return Array(22).fill("").concat(["selected"]);
   } else if (RESize == "30045LVL11") {
     return Array(23).fill("").concat(["selected"]);
@@ -253,6 +274,16 @@ exports.RESize = function (RESize) {
     return Array(32).fill("").concat(["selected"]);
   } else if (RESize == "40022.5LVL13") {
     return Array(33).fill("").concat(["selected"]);
+  } else if (RESize == "45063LVL13") {
+    return Array(34).fill("").concat(["selected"]);
+  } else if (RESize == "SG815050wet") {
+    return Array(35).fill("").concat(["selected"]);
+  } else if (RESize == "SG820050wet") {
+    return Array(36).fill("").concat(["selected"]);
+  } else if (RESize == "SG825050wet") {
+    return Array(37).fill("").concat(["selected"]);
+  } else if (RESize == "SG830050wet") {
+    return Array(38).fill("").concat(["selected"]);
   }
 };
 
@@ -275,6 +306,14 @@ exports.IFb = function (IFb) {
     return ["", "", "", "", "", "", "", "selected"];
   } else if (IFb == "SG625050wet") {
     return ["", "", "", "", "", "", "", "", "selected"];
+  } else if (IFb == "SG815050wet") {
+    return ["", "", "", "", "", "", "", "", "", "selected"];
+  } else if (IFb == "SG820050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "selected"];
+  } else if (IFb == "SG825050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "selected"];
+  } else if (IFb == "SG830050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "selected"];
   }
 };
 exports.Fb = function (Fb) {
@@ -316,6 +355,14 @@ exports.ISi = function (ISi) {
     return ["", "", "", "", "", "", "", "", "", "", "", "", "", "selected"];
   } else if (ISi == "SG614045Dry") {
     return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "selected"];
+  } else if (ISi == "SG815050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "selected"];
+  } else if (ISi == "SG820050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "selected"];
+  } else if (ISi == "SG825050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "selected"];
+  } else if (ISi == "SG830050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "selected"];
   }
 };
 
@@ -368,8 +415,16 @@ exports.GFb = function (GFb) {
     return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "selected"];
   } else if (GFb == "24045LVL8") {
     return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "",  "", "selected"];
-  } else if (GFb == "30045LVL8") {
+  } else if (GFb == "29045LVL8") {
     return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "",   "", "selected"];
+  } else if (GFb == "SG815050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "",  "",  "", "selected"];
+  } else if (GFb == "SG820050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "",  "",  "",  "", "selected"];
+  } else if (GFb == "SG825050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "",  "", "", "",  "", "selected"];
+  } else if (GFb == "SG830050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "",  "", "", "", "",  "", "selected"];
   } 
 
  
@@ -424,8 +479,16 @@ exports.GSi = function (GFb) {
     return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "selected"];
   } else if (GFb == "24045LVL8") {
     return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "",  "", "selected"];
-  } else if (GFb == "30045LVL8") {
+  } else if (GFb == "29045LVL8") {
     return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "",   "", "selected"];
+  } else if (GFb == "SG815050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "", "",  "", "selected"];
+  } else if (GFb == "SG820050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "", "",  "", "", "selected"];
+  } else if (GFb == "SG825050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "", "", "", "", "", "selected"];
+  } else if (GFb == "SG830050wet") {
+    return ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "", "", "", "", "", "", "", "selected"];
   } 
 };
 
@@ -484,6 +547,8 @@ exports.MPi = function (GFb) {
     return Array(14).fill("").concat(["selected"]);
   } else if (GFb == "250UNI") {
     return Array(15).fill("").concat(["selected"]);
+  } else if (GFb == "350SED") {
+    return Array(16).fill("").concat(["selected"]);
   } 
 };
 
@@ -654,11 +719,19 @@ exports.PrSize = function (RSize) {
     return Array(19).fill("").concat(["selected"]);
   } else if (RSize == "24045LVL8") {
     return Array(20).fill("").concat(["selected"]);
-  } else if (RSize == "30045LVL8") {
+  } else if (RSize == "29045LVL8") {
     return Array(21).fill("").concat(["selected"]);
   } else if (RSize == "30045LVL11") {
     return Array(22).fill("").concat(["selected"]);
-  }
+  } else if (RSize == "15050SG8") {
+    return Array(23).fill("").concat(["selected"]);
+  } else if (RSize == "20050SG8") {
+    return Array(24).fill("").concat(["selected"]);
+  } else if (RSize == "25050SG8") {
+    return Array(25).fill("").concat(["selected"]);
+  } else if (RSize == "30050SG8") {
+    return Array(26).fill("").concat(["selected"]);
+  } 
 };
 
 exports.PropQ = function (RSize) {
@@ -713,6 +786,14 @@ exports.ISIAuto = function (RSize) {
   if (RSize == "ISIAuto") {
     return ["selected"];
   } else if (RSize == "ISIManual") {
+    return ["", "selected"];
+  }
+};
+
+exports.IL = function (a) {
+  if (a == "IL1") {
+    return ["selected"];
+  } else {
     return ["", "selected"];
   }
 };

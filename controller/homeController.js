@@ -392,7 +392,7 @@ const generatePdf = async (req, res, next) => {
       console.error(error);
     });
 
-  const filepath = "http://localhost:3000/docs/" + filename;
+  const filepath = "/docs/" + filename;
 
   res.render("download", {
     path: filepath,
