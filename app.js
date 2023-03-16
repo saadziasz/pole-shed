@@ -11,7 +11,7 @@ const path = require("path");
 const alert = require("alert");
 const expressLayouts = require("express-ejs-layouts");
 const multer = require('multer')
-
+const PORT = process.env.PORT || 3000;
 
 
 var http = require('http');
